@@ -1,0 +1,39 @@
+@startuml
+
+actor Usager
+actor Employé
+actor Bénévole
+
+    Usager -> Bibliothèque : Rechercher un document
+  Bibliothèque -> Usager : Lister les documents disponibles
+
+  Usager -> Bibliothèque : Consulter un document
+  Bibliothèque -> Usager : Fournir le document
+
+  Usager -> Employé : Emprunter un document
+  Employé -> Bibliothèque : Créer un enregistrement de prêt
+  Employé -> Usager : Donner le document
+
+  Usager -> Employé : Prolonger un prêt
+  Employé -> Bibliothèque : Prolonger l'enregistrement de prêt
+
+  Usager -> Employé : Rendre un document
+  Employé -> Bibliothèque : Mettre à jour l'enregistrement de prêt
+
+  Usager -> Employé : S'inscrire comme lecteur
+  Employé -> Bibliothèque : Créer une fiche lecteur
+  Employé -> Usager : Donner une carte de lecteur
+
+  Employé -> Bibliothèque : Mettre à jour les informations d'un lecteur
+
+  Employé -> Fournisseur : Acheter un document
+  Fournisseur -> Employé : Livrer le document
+  Employé -> Bibliothèque : Stocker le document
+
+  Employé -> Bibliothèque : Récupérer des données statistiques
+  Employé -> Système_externe : Transmettre des données statistiques
+
+  Employé -> Bénévole : Assigner des tâches de prêt
+  Bénévole -> Employé : Signaler les problèmes rencontrés
+  
+  @enduml
