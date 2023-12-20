@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   
+{# <pre>
+    {{ dump(plat) }}
+</pre> #}
+
+<div class="container-fluid">
+  {# {% if message is defined %}
+        <div class="alert alert-info">{{ message }}</div>
+    {% endif %} #}
+   {% for message_ok in app.flashes('success') %}
+		<div class="alert alert-success" role="alert" id="info_search">{{ message_ok }}</div>
+	{% endfor %}
+    {% for message_ko in app.flashes('warning') %}
+		<div class="alert alert-warning" role="alert" id="info_search">{{ message_ko }}</div>
+	{% endfor %}
+
+<div class="float-right">
+<p > <a class="btn" href="{{path('app_accueil')}}">Retour à l'accueil</a></p>
+</div>
+    <div class="row">
+        
+        {% for articles in article %}
+
+            <div class="col afftexton col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center" >
+                <a href="{{path('app_detail_article', {"libelle" : articles.libelle })}}">
+                    <img class="zoom" src="{{ '/image/' ~ articles.image }}" class="rounded img-responsive;" height="250px" width="250px"> 
+                </a>
+                    <br>
+                    <br>
+                    <strong> {{articles.libelle}} </strong>
+                    <br>
+                   {{articles.description}} 
+              
+            </div>
+
+        {% endfor %}
+
+
+{% endblock %}
+
+{% block javascripts %}
+<script>
+
+
+$(document).ready(function() {
+    setTimeout(function(){
+        //$('#alert-div').remove();
+        $('#info_search').attr("hidden",true);
+        // console.log('je suis dans la function')
+        }, 4000);
+});
+
+</script>
+
+{% endblock %}
