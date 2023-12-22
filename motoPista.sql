@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mar. 14 nov. 2023 à 16:26
+-- Généré le : ven. 22 déc. 2023 à 10:44
 -- Version du serveur : 10.6.12-MariaDB-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.14
 
@@ -24,28 +24,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Article`
+-- Structure de la table `article`
 --
 
-CREATE TABLE `Article` (
-  `Id_Article` int(11) NOT NULL,
-  `libelle` varchar(50) DEFAULT NULL,
-  `prix_HT` varchar(50) DEFAULT NULL,
-  `description` varchar(2500) DEFAULT NULL,
-  `img` varchar(50) DEFAULT NULL,
-  `Id_Fournisseur` int(50) DEFAULT NULL,
-  `Id_Sous_rubrique` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `Article`
---
-
-INSERT INTO `Article` (`Id_Article`, `libelle`, `prix_HT`, `description`, `img`, `Id_Fournisseur`, `Id_Sous_rubrique`) VALUES
-(1, 'replica Pedrosa', '1040.00', 'LE RX-7V EVO est l\'évolution du RX-7V. En plus de son changement d\'homologation, il présente plusieurs nouvelles\r\ncaractéristiques et modifications. Il est certifié conforme à la nouvelle réglementation ECE R22-06 tout on restant\r\nfidèle aux valeurs d\'Arai; plus rond, plus lisse, plus fort pour une gestion optimale de l\'effet ricochet. Le RX-7V EVO\r\nreprésente le summum de la connaissance, de l\'expérience et du savoir-faire Arai en technologie de casque. Système\r\n\r\nde visière révolutionnaire VAS (systéme à axe variable) Zone plus grande et plus lisse autour des tempes Nouvelle Arai\r\ndoublure Eco Pure Coussinets de joue effeuillables : maintien ajustable Nouveaux diffuseur et canaux d\'air intégrés Marque Ar )\r\nConcept Ricochet : forme optimisée pour glisser sur les obstacles, dévier l\'impact du choc pour ne pas la transmettre\r\nau pilote, Système VAS : ouverture de visière à axe variable, visière plus compacte pour un champ de vision\r\nidentique, protection faciale plus efficace. Lentille Pinlock incluse Homologation : SNELL - Européenne ECE R22.06 pére mp\r\nFabriqué à la main Garantie 5 ans Résultats aux tests d\'impact de la norme Snell largement surpassés : le premier\r\nobjectif d\'Arai est de concevoir les casques les plus sûrs au monde ! Attention ; La taille de la coque extérieure du XL\r\nest supérieure d\'une taille (86 -> 88). Guide des tailes : XS 53-54 cm S 55-56 cm M 57-58 cm L 59 cm XL 60-61 cm ee =\r\nCouleur or\r\nMatériau Fibre de verre\r\nEcran solaire rétractable Non\r\nIntérieur démontable oui\r\nJugulaire Double D\r\nType de peinture Mate\r\nStyle de Peinture Replica\r\nSystème de protection boîte cranienne Non\r\nCollection 2022\r\nCompatible Bluetooth ou\r\nEcran anti-buée inclus', NULL, 1, 1),
-(2, 'combinaison iIxon', NULL, 'Combinaison Kangourou 100% made by Ixon, aboutissement de notre implication au plus haut niveau de la\r\n\r\ncompéttion, Développés dans labjectf du GP, standardisée pour tous les piotes Eiche technique\r\nProtections coudes et épaules crées CE selon ja nomme 1621-1 + Poche dorsaie pour Dorsle certifiée CE\r\nvas Dear\r\nProtections genoux cerifiées CE selon ja nomme 16211\r\nATERIAI Référence\r\n\r\n10096 cuir de kangourou\r\nTratement icone exclu sur le cuir\r\nMousses « absorption d\'impact» à lnérieur\r\nStretch hyper extensible dans les 4 sens (43% d\'élasticté)\r\nCuir flex doublé de jersey renforcé aux emmanchures et au bas du dos\r\nCONFORT\r\nCoutures sécurisées\r\nEntièrement préformée\r\nCARACTERISTIQUES\r\nLvrée avec housse Suécover, sers et cache\r\n\r\nNOS RECOMMANDATIONS\r\n90 SLIDERS BOIS\r\n\r\nSliders PK Sliders bois. Sliders plui.', NULL, 2, 2),
-(3, 'Béquilles de stand av/ar', '185.70', 'fixation pour prise sous pied de fourche ( pin ) réglable de 185 a 210 mm ( voir photos )\r\n\r\nLa béquille avant rentre dans la béquille arrière ce qui rends le rangement plus facile avec un gain de place\r\n\r\nle kit qui prends sous la fixation d\'étriers avant, ne conviens pas aux motos ayant un capteur ABS sous\r\n\r\nl\'étrier ( ex R12015..2021 , R6 2017... )', NULL, 2, 3),
-(4, 'Béquille sous T', NULL, 'Béquille sous T Extrem Racing Factory\r\nFiche technique\r\nNos béquilles sous T de fourche sont très stables et robustes, destinées aux motos sportives et roadsters fabriquées\r\n\r\nen tubes acier de 32 mm et démontable pour faciliter le transport et la livraison chez nos clients, elles sont livrées en =\r\nKit a monter co aŒRF\r\nune fois correctement assemblées ces béquilles présentent la même rigidité que les béquilles mono pièces de\r\nfabrication concurrentes Référence ERF3020\r\nle prix très bas les placent en tête des ventes de béquilles\r\njuile fournie avec son système de prise sous le T de fourche ( 5 broches pour différentes moto\r\n\r\npa vs Le « pour ) Couleur Noir\r\n« Elle est livré avec ses piges de diamètre 13mm - 16.5mm - 18mm - 20mm - 24mm - 27mm afin de correspondre au\r\n\r\nplus grands nombres de machine du marché. Marque Pkracingparts\r\nvérifiez bien avant commande\r\n\r\nCharge maximale (kg) 220\r\n\r\n= qu\'au moins une des piges fournies avec la béquille corresponde bien au diamêtre du trou de votre T de fourche\r\n\r\nsi ce n\'est pas le cas , prendre une pige supplémentaire en accessoire , si la pige n\'est pas du bon diamêtre\r\nl\'utilisation de la béquille est impossible\r\n\r\n= que le trou du T de fourche est dégagé de tout accessoire, ( avertisseur , répartiteur de frein … etc )\r\n\r\nATTENTION : la pige doit être du diamètre exact du trou sous le T ( a 1mm prés maximum) de fourche faute\r\nde quoi la béquille ne fonctionnera pas correctement sera instable et le bras risque de toucher le dessous\r\ndu carénage\r\n\r\nmerci donc de prendre le diamètre du trou du T de fourche de votre moto avant de commander\r\nsi le trou ne correspond pas , prendre une pige supplémentaire vendue au détail ici', NULL, 2, 3);
+CREATE TABLE `article` (
+  `id` int(11) NOT NULL,
+  `libelle` varchar(255) NOT NULL,
+  `prix_ht` decimal(10,0) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `fournisseur_id` int(11) DEFAULT NULL,
+  `sous_rubrique_id` int(11) DEFAULT NULL,
+  `detail_commande_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -54,38 +45,27 @@ INSERT INTO `Article` (`Id_Article`, `libelle`, `prix_HT`, `description`, `img`,
 --
 
 CREATE TABLE `bon_livraison` (
-  `Id_bon_livraison` int(11) NOT NULL,
-  `adresse_livraison` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` int(11) NOT NULL,
+  `adresse_livraison` varchar(255) NOT NULL,
+  `commande_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Commande`
+-- Structure de la table `commande`
 --
 
-CREATE TABLE `Commande` (
-  `Id_Commande` int(11) NOT NULL,
-  `qte` varchar(50) DEFAULT NULL,
-  `total` varchar(50) DEFAULT NULL,
-  `date_com` varchar(50) DEFAULT NULL,
-  `nom` varchar(50) DEFAULT NULL,
-  `prenom` varchar(50) DEFAULT NULL,
-  `adresse` varchar(50) DEFAULT NULL,
-  `Id_utilisateur` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `detail_bon_livraison`
---
-
-CREATE TABLE `detail_bon_livraison` (
-  `Id_Article` int(11) NOT NULL,
-  `Id_bon_livraison` int(11) NOT NULL,
-  `qte` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `commande` (
+  `id` int(11) NOT NULL,
+  `qte` int(11) NOT NULL,
+  `date_com` date NOT NULL,
+  `cli_nom` varchar(255) NOT NULL,
+  `cli_prenom` varchar(255) NOT NULL,
+  `cli_adresse` varchar(255) NOT NULL,
+  `total` decimal(10,0) NOT NULL,
+  `utilisateur_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -94,358 +74,291 @@ CREATE TABLE `detail_bon_livraison` (
 --
 
 CREATE TABLE `detail_commande` (
-  `Id_Commande` int(11) NOT NULL,
-  `Id_Article` int(11) NOT NULL,
-  `qte` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` int(11) NOT NULL,
+  `qte` int(11) DEFAULT NULL,
+  `commande_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `editer_bon_livraison`
+-- Structure de la table `facture`
 --
 
-CREATE TABLE `editer_bon_livraison` (
-  `Id_Commande` int(11) NOT NULL,
-  `Id_bon_livraison` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `facture` (
+  `id` int(11) NOT NULL,
+  `adresse_facturation` varchar(255) NOT NULL,
+  `date_paiement` date NOT NULL,
+  `regler` tinyint(1) NOT NULL,
+  `taux_tva` decimal(10,0) NOT NULL,
+  `total` decimal(10,0) NOT NULL,
+  `date_limite` date NOT NULL,
+  `commande_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Facture`
+-- Structure de la table `fournisseur`
 --
 
-CREATE TABLE `Facture` (
-  `Id_Facture` int(11) NOT NULL,
-  `adresse_facturation` varchar(50) DEFAULT NULL,
-  `mode` varchar(50) DEFAULT NULL,
-  `date_paiement` varchar(50) DEFAULT NULL,
-  `Id_Commande` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `fournisseur` (
+  `id` int(11) NOT NULL,
+  `four_nom` varchar(255) NOT NULL,
+  `four_adresse` varchar(255) NOT NULL,
+  `four_mail` varchar(255) NOT NULL,
+  `four_ent` varchar(255) NOT NULL,
+  `four_tel` int(11) NOT NULL,
+  `four_prenom` varchar(255) NOT NULL,
+  `four_ref` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Fournir`
+-- Structure de la table `messenger_messages`
 --
 
-CREATE TABLE `Fournir` (
-  `Id_Fournisseur` int(11) NOT NULL,
-  `Id_Article` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `messenger_messages` (
+  `id` bigint(20) NOT NULL,
+  `body` longtext NOT NULL,
+  `headers` longtext NOT NULL,
+  `queue_name` varchar(190) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `available_at` datetime NOT NULL,
+  `delivered_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Fournisseur`
+-- Structure de la table `rubrique`
 --
 
-CREATE TABLE `Fournisseur` (
-  `Id_Fournisseur` int(11) NOT NULL,
-  `four_nom` varchar(50) DEFAULT NULL,
-  `four_adresse` varchar(50) DEFAULT NULL,
-  `four_mail` varchar(50) DEFAULT NULL,
-  `four_ent` varchar(50) DEFAULT NULL,
-  `four_tel` varchar(50) DEFAULT NULL,
-  `four_prenom` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `Fournisseur`
---
-
-INSERT INTO `Fournisseur` (`Id_Fournisseur`, `four_nom`, `four_adresse`, `four_mail`, `four_ent`, `four_tel`, `four_prenom`) VALUES
-(1, 'Durand', '28 rue des peupliers', 'vente@bihr.com', 'Bihr', '0377145684', 'Julien'),
-(2, 'Desjardins', '232 route de l\'impasse', 'vente@breizh_stunt.com', 'Beizh_stunt', '0377986356', 'Lucien');
+CREATE TABLE `rubrique` (
+  `id` int(11) NOT NULL,
+  `nom_rubrique` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Rubrique`
+-- Structure de la table `sous_rubrique`
 --
 
-CREATE TABLE `Rubrique` (
-  `Id_Rubrique` int(11) NOT NULL,
-  `nom_categorie` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `Rubrique`
---
-
-INSERT INTO `Rubrique` (`Id_Rubrique`, `nom_categorie`) VALUES
-(1, 'equipement_pilote'),
-(2, 'equipement_stand');
+CREATE TABLE `sous_rubrique` (
+  `id` int(11) NOT NULL,
+  `nom_sous_categorie` varchar(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `rubrique_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Sous_rubrique`
+-- Structure de la table `utilisateur`
 --
 
-CREATE TABLE `Sous_rubrique` (
-  `Id_Sous_rubrique` int(11) NOT NULL,
-  `nom_sous_categorie` varchar(50) DEFAULT NULL,
-  `Id_Rubrique` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `Sous_rubrique`
---
-
-INSERT INTO `Sous_rubrique` (`Id_Sous_rubrique`, `nom_sous_categorie`, `Id_Rubrique`) VALUES
-(1, 'casque', 1),
-(2, 'combinaisons', 1),
-(3, 'bequille_atelier', 2),
-(4, 'nettoyant', 2),
-(5, 'sous-combinaison', 1),
-(6, 'tente/stand', 2),
-(7, 'Bottes', 1),
-(8, 'Gants', 1);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `Utilisateur`
---
-
-CREATE TABLE `Utilisateur` (
-  `Id_utilisateur` int(11) NOT NULL,
-  `prenom` varchar(50) DEFAULT NULL,
-  `nom` varchar(50) DEFAULT NULL,
-  `tel` varchar(50) DEFAULT NULL,
-  `cli_ref` varchar(50) DEFAULT NULL,
-  `coeff` varchar(50) DEFAULT NULL,
-  `role` varchar(50) DEFAULT NULL,
-  `mail` varchar(50) DEFAULT NULL,
-  `ent` varchar(50) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `adresse1` varchar(50) DEFAULT NULL,
-  `adresse2` varchar(50) DEFAULT NULL,
-  `Id_utilisateur_1` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Déchargement des données de la table `Utilisateur`
---
-
-INSERT INTO `Utilisateur` (`Id_utilisateur`, `prenom`, `nom`, `tel`, `cli_ref`, `coeff`, `role`, `mail`, `ent`, `password`, `adresse1`, `adresse2`, `Id_utilisateur_1`) VALUES
-(1, 'Alexandre', 'Garnier', '0624589874', NULL, '', 'com_particulier', 'alexGarnier@gmail.com', NULL, NULL, NULL, NULL, NULL),
-(2, 'Poag', 'Doroteya', '8895753082', 'dpoagc@barnesandnoble.com', NULL, 'com_pro', 'dpoagc@yandex.ru', NULL, NULL, 'Room 1329', 'Room 253', NULL),
-(3, 'Holberry', 'Gretel', '3232665063', 'gholberryg@baidu.com', NULL, NULL, 'gholberryg@phoca.cz', NULL, NULL, 'PO Box 37303', 'Suite 70', 1),
-(5, 'Coxall', 'Lisha', '6775958551', 'lcoxall4@craigslist.org', NULL, NULL, 'lcoxall4@nps.gov', NULL, NULL, 'PO Box 3467', 'Apt 775', NULL),
-(6, 'Gravenor', 'Verine', '3815870382', 'vgravenor5@forbes.com', NULL, NULL, 'vgravenor5@thetimes.co.uk', NULL, NULL, 'Apt 187', '10th Floor', NULL),
-(7, 'Cassely', 'Karlie', '4638581763', 'kcassely9@vinaora.com', NULL, NULL, 'kcassely9@usa.gov', NULL, NULL, 'Apt 244', 'Apt 1169', NULL),
-(8, 'Moehler', 'Grethel', '5575131477', 'gmoehlerd@imageshack.us', NULL, NULL, 'gmoehlerd@goo.ne.jp', NULL, NULL, 'Room 998', 'Suite 29', NULL),
-(9, 'Wellbeloved', 'Willette', '6318855236', 'wwellbelovedb@vimeo.com', NULL, NULL, 'wwellbelovedb@sphinn.com', NULL, NULL, 'Apt 861', 'Suite 64', NULL),
-(10, 'Bunton', 'Caroline', '9467844701', 'cbuntoni@netlog.com', NULL, NULL, 'cbuntoni@senate.gov', NULL, NULL, 'Suite 21', 'Suite 77', NULL),
-(11, 'Studeart', 'Earle', '5758652456', 'estudearta@shutterfly.com', NULL, NULL, 'estudearta@chicagotribune.com', NULL, NULL, 'Room 1874', 'PO Box 89923', NULL),
-(12, 'Tregien', 'Beatriz', '2437852019', 'btregien1@a8.net', NULL, NULL, 'btregien1@nymag.com', NULL, NULL, 'PO Box 47733', 'PO Box 7368', NULL),
-(13, 'Cianni', 'Arielle', '2922096224', 'acianni2@illinois.edu', NULL, NULL, 'acianni2@a8.net', NULL, NULL, 'Suite 44', 'Room 383', NULL),
-(14, 'Dronsfield', 'Lonni', '2173035528', 'ldronsfield3@privacy.gov.au', NULL, NULL, 'ldronsfield3@jalbum.net', NULL, NULL, 'Suite 36', 'Room 1463', NULL),
-(15, 'Zamora', 'Marinna', '4226502130', 'mzamorae@hibu.com', NULL, NULL, 'mzamorae@dot.gov', NULL, NULL, 'PO Box 75224', '4th Floor', NULL),
-(16, 'Gouldsmith', 'Carine', '1636959181', 'cgouldsmith7@istockphoto.com', NULL, NULL, 'cgouldsmith7@prnewswire.com', NULL, NULL, '14th Floor', 'PO Box 49247', NULL),
-(17, 'Headley', 'Oates', '5318685871', 'oheadley8@blogger.com', NULL, NULL, 'oheadley8@goo.ne.jp', NULL, NULL, 'PO Box 83624', 'Apt 1010', NULL),
-(18, 'Bignall', 'Glad', '5082868086', 'gbignallj@bandcamp.com', NULL, NULL, 'gbignallj@stanford.edu', NULL, NULL, 'Room 1068', 'Apt 750', NULL),
-(19, 'Sillitoe', 'Cirstoforo', '7612685929', 'csillitoeh@youku.com', NULL, NULL, 'csillitoeh@bravesites.com', NULL, NULL, 'Apt 567', 'Suite 68', NULL),
-(20, 'Suffe', 'Rebeca', '4884887390', 'rsuffef@plala.or.jp', NULL, NULL, 'rsuffef@phpbb.com', NULL, NULL, 'Room 810', 'Apt 1411', NULL),
-(21, 'Blankman', 'Nicole', '9087339420', 'nblankman6@zdnet.com', NULL, NULL, 'nblankman6@zimbio.com', NULL, NULL, 'Suite 44', '14th Floor', NULL);
+CREATE TABLE `utilisateur` (
+  `id` int(11) NOT NULL,
+  `email` varchar(180) NOT NULL,
+  `roles` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL COMMENT '(DC2Type:json)' CHECK (json_valid(`roles`)),
+  `password` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `tel` varchar(255) NOT NULL,
+  `cli_ref` varchar(255) NOT NULL,
+  `coeff` decimal(10,0) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `ent` varchar(255) NOT NULL,
+  `adresse1` varchar(255) NOT NULL,
+  `adresse2` varchar(255) DEFAULT NULL,
+  `siret` varchar(255) DEFAULT NULL,
+  `role` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `Article`
+-- Index pour la table `article`
 --
-ALTER TABLE `Article`
-  ADD PRIMARY KEY (`Id_Article`),
-  ADD KEY `Id_Sous_rubrique` (`Id_Sous_rubrique`),
-  ADD KEY `Id_Fournisseur` (`Id_Fournisseur`);
+ALTER TABLE `article`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_23A0E66670C757F` (`fournisseur_id`),
+  ADD KEY `IDX_23A0E667BEAFB00` (`sous_rubrique_id`),
+  ADD KEY `IDX_23A0E66EDE14305` (`detail_commande_id`);
 
 --
 -- Index pour la table `bon_livraison`
 --
 ALTER TABLE `bon_livraison`
-  ADD PRIMARY KEY (`Id_bon_livraison`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_31A531A482EA2E54` (`commande_id`);
 
 --
--- Index pour la table `Commande`
+-- Index pour la table `commande`
 --
-ALTER TABLE `Commande`
-  ADD PRIMARY KEY (`Id_Commande`),
-  ADD KEY `Id_utilisateur` (`Id_utilisateur`);
-
---
--- Index pour la table `detail_bon_livraison`
---
-ALTER TABLE `detail_bon_livraison`
-  ADD PRIMARY KEY (`Id_Article`,`Id_bon_livraison`),
-  ADD KEY `Id_bon_livraison` (`Id_bon_livraison`);
+ALTER TABLE `commande`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_6EEAA67DFB88E14F` (`utilisateur_id`);
 
 --
 -- Index pour la table `detail_commande`
 --
 ALTER TABLE `detail_commande`
-  ADD PRIMARY KEY (`Id_Commande`,`Id_Article`),
-  ADD KEY `Id_Article` (`Id_Article`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_98344FA682EA2E54` (`commande_id`);
 
 --
--- Index pour la table `editer_bon_livraison`
+-- Index pour la table `facture`
 --
-ALTER TABLE `editer_bon_livraison`
-  ADD PRIMARY KEY (`Id_Commande`,`Id_bon_livraison`),
-  ADD KEY `Id_bon_livraison` (`Id_bon_livraison`);
+ALTER TABLE `facture`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_FE86641082EA2E54` (`commande_id`);
 
 --
--- Index pour la table `Facture`
+-- Index pour la table `fournisseur`
 --
-ALTER TABLE `Facture`
-  ADD PRIMARY KEY (`Id_Facture`),
-  ADD UNIQUE KEY `Id_Commande` (`Id_Commande`);
+ALTER TABLE `fournisseur`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `Fournir`
+-- Index pour la table `messenger_messages`
 --
-ALTER TABLE `Fournir`
-  ADD PRIMARY KEY (`Id_Fournisseur`,`Id_Article`),
-  ADD KEY `Id_Article` (`Id_Article`);
+ALTER TABLE `messenger_messages`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_75EA56E0FB7336F0` (`queue_name`),
+  ADD KEY `IDX_75EA56E0E3BD61CE` (`available_at`),
+  ADD KEY `IDX_75EA56E016BA31DB` (`delivered_at`);
 
 --
--- Index pour la table `Fournisseur`
+-- Index pour la table `rubrique`
 --
-ALTER TABLE `Fournisseur`
-  ADD PRIMARY KEY (`Id_Fournisseur`);
+ALTER TABLE `rubrique`
+  ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `Rubrique`
+-- Index pour la table `sous_rubrique`
 --
-ALTER TABLE `Rubrique`
-  ADD PRIMARY KEY (`Id_Rubrique`);
+ALTER TABLE `sous_rubrique`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `IDX_87EA3D293BD38833` (`rubrique_id`);
 
 --
--- Index pour la table `Sous_rubrique`
+-- Index pour la table `utilisateur`
 --
-ALTER TABLE `Sous_rubrique`
-  ADD PRIMARY KEY (`Id_Sous_rubrique`),
-  ADD KEY `Id_Rubrique` (`Id_Rubrique`);
-
---
--- Index pour la table `Utilisateur`
---
-ALTER TABLE `Utilisateur`
-  ADD PRIMARY KEY (`Id_utilisateur`),
-  ADD KEY `Id_utilisateur_1` (`Id_utilisateur_1`);
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `UNIQ_1D1C63B3E7927C74` (`email`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
--- AUTO_INCREMENT pour la table `Article`
+-- AUTO_INCREMENT pour la table `article`
 --
-ALTER TABLE `Article`
-  MODIFY `Id_Article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `article`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `bon_livraison`
 --
 ALTER TABLE `bon_livraison`
-  MODIFY `Id_bon_livraison` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `Commande`
+-- AUTO_INCREMENT pour la table `commande`
 --
-ALTER TABLE `Commande`
-  MODIFY `Id_Commande` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `commande`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `Facture`
+-- AUTO_INCREMENT pour la table `detail_commande`
 --
-ALTER TABLE `Facture`
-  MODIFY `Id_Facture` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `detail_commande`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `Fournisseur`
+-- AUTO_INCREMENT pour la table `facture`
 --
-ALTER TABLE `Fournisseur`
-  MODIFY `Id_Fournisseur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `facture`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `Rubrique`
+-- AUTO_INCREMENT pour la table `fournisseur`
 --
-ALTER TABLE `Rubrique`
-  MODIFY `Id_Rubrique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `fournisseur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `Sous_rubrique`
+-- AUTO_INCREMENT pour la table `messenger_messages`
 --
-ALTER TABLE `Sous_rubrique`
-  MODIFY `Id_Sous_rubrique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+ALTER TABLE `messenger_messages`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `rubrique`
+--
+ALTER TABLE `rubrique`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `sous_rubrique`
+--
+ALTER TABLE `sous_rubrique`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Contraintes pour les tables déchargées
 --
 
 --
--- Contraintes pour la table `Article`
+-- Contraintes pour la table `article`
 --
-ALTER TABLE `Article`
-  ADD CONSTRAINT `Article_ibfk_1` FOREIGN KEY (`Id_Sous_rubrique`) REFERENCES `Sous_rubrique` (`Id_Sous_rubrique`),
-  ADD CONSTRAINT `Article_ibfk_2` FOREIGN KEY (`Id_Fournisseur`) REFERENCES `Fournisseur` (`Id_Fournisseur`);
+ALTER TABLE `article`
+  ADD CONSTRAINT `FK_23A0E66670C757F` FOREIGN KEY (`fournisseur_id`) REFERENCES `fournisseur` (`id`),
+  ADD CONSTRAINT `FK_23A0E667BEAFB00` FOREIGN KEY (`sous_rubrique_id`) REFERENCES `sous_rubrique` (`id`),
+  ADD CONSTRAINT `FK_23A0E66EDE14305` FOREIGN KEY (`detail_commande_id`) REFERENCES `detail_commande` (`id`);
 
 --
--- Contraintes pour la table `Commande`
+-- Contraintes pour la table `bon_livraison`
 --
-ALTER TABLE `Commande`
-  ADD CONSTRAINT `Commande_ibfk_1` FOREIGN KEY (`Id_utilisateur`) REFERENCES `Utilisateur` (`Id_utilisateur`);
+ALTER TABLE `bon_livraison`
+  ADD CONSTRAINT `FK_31A531A482EA2E54` FOREIGN KEY (`commande_id`) REFERENCES `commande` (`id`);
 
 --
--- Contraintes pour la table `detail_bon_livraison`
+-- Contraintes pour la table `commande`
 --
-ALTER TABLE `detail_bon_livraison`
-  ADD CONSTRAINT `detail_bon_livraison_ibfk_1` FOREIGN KEY (`Id_Article`) REFERENCES `Article` (`Id_Article`),
-  ADD CONSTRAINT `detail_bon_livraison_ibfk_2` FOREIGN KEY (`Id_bon_livraison`) REFERENCES `bon_livraison` (`Id_bon_livraison`);
+ALTER TABLE `commande`
+  ADD CONSTRAINT `FK_6EEAA67DFB88E14F` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateur` (`id`);
 
 --
 -- Contraintes pour la table `detail_commande`
 --
 ALTER TABLE `detail_commande`
-  ADD CONSTRAINT `detail_commande_ibfk_1` FOREIGN KEY (`Id_Commande`) REFERENCES `Commande` (`Id_Commande`),
-  ADD CONSTRAINT `detail_commande_ibfk_2` FOREIGN KEY (`Id_Article`) REFERENCES `Article` (`Id_Article`);
+  ADD CONSTRAINT `FK_98344FA682EA2E54` FOREIGN KEY (`commande_id`) REFERENCES `commande` (`id`);
 
 --
--- Contraintes pour la table `editer_bon_livraison`
+-- Contraintes pour la table `facture`
 --
-ALTER TABLE `editer_bon_livraison`
-  ADD CONSTRAINT `editer_bon_livraison_ibfk_1` FOREIGN KEY (`Id_Commande`) REFERENCES `Commande` (`Id_Commande`),
-  ADD CONSTRAINT `editer_bon_livraison_ibfk_2` FOREIGN KEY (`Id_bon_livraison`) REFERENCES `bon_livraison` (`Id_bon_livraison`);
+ALTER TABLE `facture`
+  ADD CONSTRAINT `FK_FE86641082EA2E54` FOREIGN KEY (`commande_id`) REFERENCES `commande` (`id`);
 
 --
--- Contraintes pour la table `Facture`
+-- Contraintes pour la table `sous_rubrique`
 --
-ALTER TABLE `Facture`
-  ADD CONSTRAINT `Facture_ibfk_1` FOREIGN KEY (`Id_Commande`) REFERENCES `Commande` (`Id_Commande`);
-
---
--- Contraintes pour la table `Fournir`
---
-ALTER TABLE `Fournir`
-  ADD CONSTRAINT `Fournir_ibfk_1` FOREIGN KEY (`Id_Fournisseur`) REFERENCES `Fournisseur` (`Id_Fournisseur`),
-  ADD CONSTRAINT `Fournir_ibfk_2` FOREIGN KEY (`Id_Article`) REFERENCES `Article` (`Id_Article`);
-
---
--- Contraintes pour la table `Sous_rubrique`
---
-ALTER TABLE `Sous_rubrique`
-  ADD CONSTRAINT `Sous_rubrique_ibfk_1` FOREIGN KEY (`Id_Rubrique`) REFERENCES `Rubrique` (`Id_Rubrique`);
-
---
--- Contraintes pour la table `Utilisateur`
---
-ALTER TABLE `Utilisateur`
-  ADD CONSTRAINT `Utilisateur_ibfk_1` FOREIGN KEY (`Id_utilisateur_1`) REFERENCES `Utilisateur` (`Id_utilisateur`);
+ALTER TABLE `sous_rubrique`
+  ADD CONSTRAINT `FK_87EA3D293BD38833` FOREIGN KEY (`rubrique_id`) REFERENCES `rubrique` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
